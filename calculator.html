@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script>
+function sum() {
+    let numOne , numTwo , sum ;
+    numOne = Number(document.getElementById("firstNum").value);
+    numTwo = Number(document.getElementById("secondNum").value);
+    sum = numOne + numTwo ;
+    document.getElementById("res").value = sum ;
+}
+function diff() {
+    let numOne , numTwo , diff ;
+    numOne = Number(document.getElementById("firstNum").value);
+    numTwo = Number(document.getElementById("secondNum").value);
+    diff = numOne - numTwo ;
+    document.getElementById("res").value = diff ;
+}
+function mul() {
+    let numOne , numTwo , mul ;
+    numOne = Number(document.getElementById("firstNum").value);
+    numTwo = Number(document.getElementById("secondNum").value);
+    mul = numOne * numTwo ;
+    document.getElementById("res").value = mul ;
+}
+function div() {
+    let numOne , numTwo , div ;
+    numOne = Number(document.getElementById("firstNum").value);
+    numTwo = Number(document.getElementById("secondNum").value);
+    div = numOne / numTwo ;
+    document.getElementById("res").value = div ;
+}
+function mod() {
+    let numOne , numTwo , mod ;
+    numOne = Number(document.getElementById("firstNum").value);
+    numTwo = Number(document.getElementById("secondNum").value);
+    mod = numOne % numTwo ;
+    document.getElementById("res").value = mod ;
+}
+    </script>
+</head>
+<body>
+    <h1>Calculator using JAVASCRIPT</h1>
+    <main>
+    <div class="calculator">
+        <div class="container">
+            <section class="numbers">
+    <label for="firstNum">Enter first number :: <input id="firstNum"></label>
+    <label for="secondNum">Enter first number :: <input id="secondNum"></label>
+        </section>
+        <section class="buttons">
+    <button class="bttn" onclick="sum()"> Addition</button>
+    <button class="bttn" onclick="diff()"> Subtraction</button>
+    <button class="bttn" onclick="mul()"> Multiplication</button>
+    <button class="bttn" onclick="div()"> Division</button>
+    <button class="bttn" onclick="mod()"> Modulus</button>
+    </section>
+    <section class="result">
+    <label for="res">RESULT :: <input id="res"></label>
+    </section>
+    </div>
+</div>
+</main>
+</body>
+</html>
